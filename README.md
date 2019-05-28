@@ -1,5 +1,8 @@
-# project_ttt
-This project is developed as a part of a challenge posted by terribly tiny tales for recruitment.
+# Sample Web Application using HTML5, PHP and MySQL
+The solution is based on the traditional framework of:  |HTML5| <--> |PHP| <--> |MYSQL|
+-The FrontEnd basic compenents were developed using HTLM5 framework, designed using CSS 3.0 and animation was applied using Javascript and Bootstrap.
+-The BackEnd was built on a MySQL database having a single table to store the different words and their frequencies.
+-The Frontend and Bacakend were connected using PHP as the server-side scripting language.
 
 # 1. Deployment
 To ensure a hastle-free testing experience, I have deployed my website live at http://vcanteen.000webhostapp.com/. 
@@ -8,13 +11,7 @@ This was a vacant server available from one of my earlier hosted projects on 000
 NOTE: First test run, often results in a long wait/loading delay.
 Just stop the page from loading and reload it. Should work fine for all the remaining test cases to be tested after that.
 
-# 2. Overview
-The solution is based on the traditional framework of:  |HTML5| <--> |PHP| <--> |MYSQL|
--The FrontEnd basic compenents were developed using HTLM5 framework, designed using CSS 3.0 and animation was applied using Javascript and Bootstrap.
--The BackEnd was built on a MySQL database having a single table to store the different words and their frequencies.
--The Frontend and Bacakend were connected using PHP as the server-side scripting language.
-
-# 3. Front-End / Workflow of Website
+# 2. Front-End / Workflow of Website
 - Index.html
 This is the landing page of my website, and a neat and simple page to take us to the page where the user needs to enter the input.
 Was built on HTML/CSS and Javascript.
@@ -23,7 +20,7 @@ This is the next stage of the website, once where the user needs to enter the va
 - Output.php
 This is the final stage of the website, where a table displays the N-highest occuring words as recovered from the text file.
 
-# 4. BackEnd Working and steps involved
+# 3. BackEnd Working and steps involved
 
 1. On the 2nd stage at Input.html, user first enters the value of N, which needs to be carried to the next phase, as this is the number of results that we need to display on the final output. This the input stage. The input is captured using an HTML form in an input area, and the data is transmitted to the next page using POST method.
 
@@ -37,7 +34,7 @@ This is the final stage of the website, where a table displays the N-highest occ
 
 6. Now, we can move to the stage where the frequency is calcuated for each word.
 
-# 5. Frequency Calculation Logic 
+# 4. Frequency Calculation Logic 
 
 1. For each word in array with unique words,
 
@@ -54,7 +51,7 @@ such that it selects the top N rows from our database, IN SORTED ORDER (descendi
 
 7. Finally, these results are now iteratively displayed in a tabular format using HTML embedded in this php script.
 
-# 6. Testing (Screen Shots attached)
+# 5. Testing (Screen Shots attached)
 
 Test Case 1: N=5
 A table containing top 5 words with highest frequency was displayed successfully.
